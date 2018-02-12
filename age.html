@@ -1,0 +1,43 @@
+<html>
+  <head>
+     <title>Test Page</title>
+  </head>
+
+  <body>
+    <div><input type="text" id="name"></div>
+    <div><input type="date" id="birthday"></div>
+    <div><button id="complete">Complete</button></div>
+    <div id="output" style="display: none;">
+      <span id="your_name"></span> is <span id="age"></span> years old
+    </div>
+    
+
+  <script>
+   let date_field = document.getElementById("birthday"),
+       done_button = document.getElementById('complete'),
+       age_field = document.getElementById('age'),
+       name_field = document.getElementById('name'),
+       your_name_field = document.getElementById('your_name');
+    
+   done_button.addEventListener('click', () => {
+       if ( ! date_field.value ) {
+         return;
+       }
+       
+       let birthdate = new Date(date_field.value),
+           now = new Date();
+
+       let ms = now - birthdate;
+
+       age_field.innerHTML = Math.round(ms / ( 1000 * 24 * 60 * 60 * 365 ), 1);
+       document.getElementById('your_name').innerHTML = document.getElementById('name').value;
+
+      document.getElementById('output').style.display = 'block';
+    });
+    
+
+   console.log("done loading");
+  </script> 
+</body>
+</html>
+
