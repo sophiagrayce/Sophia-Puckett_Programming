@@ -1,0 +1,17 @@
+This program would require the user to input a melody as
+well as the key of the melody that it is in, and whether 
+its major or minor. It would use this info to suggest 
+chord progressions that can then be used to create a 
+instrumental track. 
+
+If the note submitted does not belong in a certain key 
+it will return false.
+
+If the user inputs the key of G, in major, it could suggest 
+using the chords/ progression (Bm, D, Em, C) or (G, Em, C, D).
+
+If the user inputs the key of G, in minor, it could suggest
+using the chords/ progression (Gm, Eb, Bb) or (Gm, Cm, Gm, Dm).
+
+I would use a database to store the possible progressions for
+each key. 
