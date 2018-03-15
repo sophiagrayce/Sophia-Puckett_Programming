@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>My API Practice</title>
+    </head>
+    <body>
+        <div id="main">
+            Something will go here
+        </div>
+     </body>
+</html>
+
+<script>
+
+function flickrResults(json){
+
+ var myDiv = document.getElementById("main");
+
+ myDiv.innerHTML = "<img src= '" + json.items[0].media.m + "' />" ;
+
+  console.log(json);} 
+
+</script>
