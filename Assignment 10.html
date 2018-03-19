@@ -1,0 +1,40 @@
+<html>
+<body>
+<h1> 
+Chord Progression Finder
+</h1>
+
+<p6>Enter the notes in your melody</p6>
+<input id= "notes" type="text" name="notes"
+
+<form onsubmit="return results();" method="post" action="/action_page.php">
+    
+</form> 
+  
+    
+  <button onclick="myFunction()">Submit</button>
+  
+  <p id="g"></p>
+  
+  <script>
+  function myFunction() {
+      var x = document.getElementById("return results");
+      var text = "";
+      var i;
+      for (i = 0; i < x.length ;i++) {
+          text += x.elements[i].value + "<br>";
+      }
+      document.getElementById("notes").innerHTML = text;
+  }
+
+  function results() {
+
+    var notes = document.getElementById('notes').value;
+  }
+
+    document.write(notes + "<br/>");
+}
+  </script>
+
+</body>
+</html>
