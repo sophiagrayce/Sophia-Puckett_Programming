@@ -1,0 +1,39 @@
+
+print "Enter a note in the C scale"
+read_input = note
+
+when note is a then note's value = 0
+when note is b then note's value = 1
+when note is c then note's value = 2
+when note is d then note's value = 3
+when note is e then note's value = 4
+when note is f then note's value = 5
+when note is g then note's value = 6 
+    
+print "Enter number of steps to transpose"
+read_input = steps
+
+
+note + steps = transpose
+
+if transpose is greater than 6 then
+transpose - 7 = result
+
+if note is less than 0 then
+note - steps = transpose
+if transpose < 0
+transpose + 7 = result 
+        
+when note is 0 then note's value = a
+when note is 1 then note's value = b
+when note is 2 then note's value = c
+when note is 3 then note's value = d
+when note is 4 then note's value = e
+when note is 5 then note's value = f
+when note is 6 then note's value = g 
+     
+        
+print result
+
+
+
