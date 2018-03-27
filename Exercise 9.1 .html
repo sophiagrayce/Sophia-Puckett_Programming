@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>My API Practice</title>
+    </head>
+    <body>
+        <div id="itunes">
+        </div>
+        <script>
+
+            function itunesResults(json){
+            
+             var myDiv = document.getElementById("itunes");
+            
+             myDiv.innerHTML = "<script src= '" + json.items[0].media.m + "' />" ;
+            
+              console.log(json);} 
+            
+             <script src="https://itunes.apple.com/search?term=jack+johnson&callback=itunesResults"/>
+             
+           </script>
+           
+            
+     </body>
+</html>
+    
+ 
+ 
+ 
+ 
+
+    
+    
