@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<header>
+  <h1>Albums</h1>
+</header>
+<body>
+
+<div id="id01"></div>
+<script>
+
+
+var myArray= [
+{
+"title": "Getting Away with It (All Messed Up)", "artist": "James","album": "Pleased to Meet You","year": "2001","art": "https://upload.wikimedia.org/wikipedia/en/2/2a/JamesPleasedToMeetYou.jpg"
+},
+
+{
+"title": "Renaissance Affair","artist": "Hooverphonic","album": "Blue Wonder Power Milk","year": 1998,"art": "https://en.wikipedia.org/wiki/File:Hooverphonic-Blue_Wonder_Power_Milk.jpg"
+},
+{
+"title": "White Nights","artist": "Oh Land","album": "Oh Land","year": 2011,"art": "https://upload.wikimedia.org/wikipedia/en/6/68/Oh_Land_%28album%29.png"
+}];
+
+
+
+showArt(myArray)
+    function showArt(arr) {
+        for (i=0;i<myArray.length;i++) {
+            document.write("<li><img src='" + myArray[i] + "' width='160' height='120'/><span>" + myArray[i] + "</span></li>");
+
+    }}
+
+    var x = document.getElementsByTagName("img src")
+    x.addEventListener("click", (showSongs));
+
+    function showSongs(myArray) {
+    var out = "";
+    var i;
+        for(i = 0; i< arr.length; i++) {
+        out += arr[i].title + ': ' + arr[i].artist + ': ' + arr[i].album + ': ' + arr[i].year + '</a><br>';
+    };
+            document.getElementById("img").innerHTML = out;
+}
+
+</script>
+</body>
+</html>
